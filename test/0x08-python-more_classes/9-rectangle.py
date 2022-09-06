@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""Defines a Rectangle class."""
+"""A Rectangle class."""
 
 
 class Rectangle:
-    """Represent a rectangle.
-
+    """A rectangle.
     Attributes:
         number_of_instances (int): The number of Rectangle instances.
         print_symbol (any): The symbol used for string representation.
@@ -14,8 +13,7 @@ class Rectangle:
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        """Initialize a new Rectangle.
-
+        """Initialize a Rectangle.
         Args:
             width (int): The width of the new rectangle.
             height (int): The height of the new rectangle.
@@ -26,7 +24,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """Get/set the width of the Rectangle."""
+        """Set the width of the Rectangle."""
         return self.__width
 
     @width.setter
@@ -39,7 +37,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Get/set the height of the Rectangle."""
+        """Set the height of the Rectangle."""
         return self.__height
 
     @height.setter
@@ -63,7 +61,6 @@ class Rectangle:
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Return the Rectangle with the greater area.
-
         Args:
             rect_1 (Rectangle): The first Rectangle.
             rect_2 (Rectangle): The second Rectangle.
@@ -81,7 +78,6 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """Return a new Rectangle with width and height equal to size.
-
         Args:
             size (int): The width and height of the new Rectangle.
         """
@@ -89,7 +85,6 @@ class Rectangle:
 
     def __str__(self):
         """Return the printable representation of the Rectangle.
-
         Represents the rectangle with the # character.
         """
         if self.__width == 0 or self.__height == 0:
