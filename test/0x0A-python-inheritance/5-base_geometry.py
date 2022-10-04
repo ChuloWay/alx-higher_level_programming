@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-"""
-    5-base_geometry: class BaseGeometry
+""" Module base geometry
 """
 
 
 class BaseGeometry:
-    """
-        An empty class.
-    """
+    """ empty class"""
     pass

@@ -1,6 +1,8 @@
 # SQL - Introduction
 
-This was my first SQL project At Alx School in which I began to work with SQL and relational databases.This project was mainly about  data definition, data manipulation language, making subqueries, and using functions.
+This was my first project in which I began to work with SQL and relational
+databases. I began practicing introductory data definition and data
+manipulation language, making subqueries, and using functions.
 
 ## Usage :dolphin:
 
@@ -99,6 +101,8 @@ $ cat 3-list_tables.sql | mysql -h localhost -u root -p mysql
 * **17. Go to UTF8**
   * [100-move_to_utf8.sql](./100-move_to_utf8.sql): MySQL script that converts the `hbtn_0c_0`
   database to UTF8.
+
+[This link](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/272/temperatures.sql) was used for the following tasks:
 
 * **18. Temperatures #0**
   * [101-avg_temperatures.sql](./101-avg_temperatures.sql): MySQL script that displays the average

@@ -1,73 +1,59 @@
 #!/usr/bin/python3
-""" Creates an empty class called Square
-"""
+""" class Square that defines a square"""
 
 
 class Square:
-    """ Empty class with size private attribute
-    """
+    """ class Square that defines a square"""
     def __init__(self, size=0):
-        """
-                Instantiation with size
-        Args:
-            size: size of the square
-        """
-        if type(size) is not int:
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = size
+        """ init square
 
-    def area(self):
+        Args:
+            value (int): size of the square.
         """
-        Returns the area of the square
-        """
-        return (self.__size * self.__size)
+        self.size = size
 
     @property
     def size(self):
-        """
-        size getter. Handle size errors
+        """int: private size.
+
+        Returns:
+            Private size.
         """
         return self.__size
 
     @size.setter
     def size(self, value):
+        """Sets value into size, must be int.
+
+        Args:
+            value (int): size of the square.
         """
-        size setter. Set the size square
+        if type(value) is not int and type(value) is not float:
+            raise TypeError('size must be a number')
+        elif value < 0:
+            raise ValueError('size must be >= 0')
+        else:
+            self.__size = value  #: size of the square
+
+    def area(self):
+        """returns the area
+
+        Returns:
+            area.
         """
-        if type(value) is not int:
-            raise TypeError("size must be an integer")
-        if value < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = value
+        return self.__size**2
 
     def __lt__(self, other):
-        """ Compare if our square is less than the other
-        """
-        return self.area() < other.area()
+        return self.size < other.size
 
     def __le__(self, other):
-        """ Compare if our square is less ot equal than the other
-        """
-        return self.area() <= other.area()
+        return self.size <= other.size
 
     def __eq__(self, other):
-        """ Compare if our square is equal than the other
-        """
-        return self.area() == other.area()
+        return self.size == other.size
 
     def __ne__(self, other):
-        """ Compare if our square is different than the other
-        """
-        return self.area() != other.area()
-
-    def __gt__(self, other):
-        """ Compare if our square is greater than the other
-        """
-        return self.area() > other.area()
+        return self.size != other.size
 
     def __ge__(self, other):
-        """ Compare if our square is less than the other
-        """
-        return self.area() >= other.area()
+        return self.size >= other.size

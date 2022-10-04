@@ -1,189 +1,124 @@
+# Python - Data Structures: Lists, Tuples
 
- ``` MANDATORY ```
+In this project, I learned about how sequence data types work in
+Python - specifically, lists and tuples.
 
-# 0-print_list_integer.py
+## Function Prototypes :floppy_disk:
 
-> Write a function that prints all integers of a list.
+Prototypes for functions written in this project:
 
-- Prototype: def print_list_integer(my_list=[]):
-- Format: one integer per line.
-- You are not allowed to import any module
-- You can assume that the list only contains integers
-- You are not allowed to cast integers into strings
-- You have to use str.format() to print integers
+| File                               | Prototype                                      |
+| ---------------------------------- | ---------------------------------------------- |
+| `0-print_list_integer.py`          | `def print_list_integer(my_list=[]):`          |
+| `1-element_at.py`                  | `def element_at(my_list, idx):`                |
+| `2-replace_in_list.py`             | `def replace_in_list(my_list, idx, element):`  |
+| `3-print_reversed_list_integer.py` | `def print_reversed_list_integer(my_list=[]):` |
+| `4-new_in_list.py`                 | `def new_in_list(my_list, idx, element):`      |
+| `5-no_c.py`                        | `def no_c(my_string):`                         |
+| `6-print_matrix_integer.py`        | `def print_matrix_integer(matrix=[[]]):`       |
+| `7-add_tuple.py`                   | `def add_tuple(tuple_a=(), tuple_b=()):`       |
+| `8-multiple_returns.py`            | `def multiple_returns(sentence):`              |
+| `9-max_integer.py`                 | `def max_integer(my_list=[]):`                 |
+| `10-divisible_by_2.py`             | `def divisible_by_2(my_list=[]):`              |
+| `11-delete_at.py`                  | `def delete_at(my_list=[], idx=0):`            |
+| `100-print_python_list_info.c`     | `void print_python_list_info(PyObject *p);`    |
 
-  
-# 1-element_at.py
+## Tasks :page_with_curl:
 
-> Write a function that retrieves an element from a list like in C.
+* **0. Print a list of integers**
+  * [0-print_list_integer.py](./0-print_list_integer.py): Python function that prints all
+  integers of a list, one per line.
+  * Without importing modules or casting integers into strings.
 
-- Prototype: def element_at(my_list, idx):
-- If idx is negative, the function should return None
-- If idx is out of range (> of number of element in my_list), the function should return None
-- You are not allowed to import any module
-- You are not allowed to use try/except
+* **1. Secure access to an element in a list**
+  * [1-element_at.py](./1-element_at.py): Python function that retrieves an element
+  from a list.
+  * If `idx` is negative or out of range (greater than the number of elements in
+  `my_list`), the function returns `None`.
+  * Without import modules or using `try/except`.
 
-  
-# 2-replace_in_list.py
+* **2. Replace element**
+  * [2-replace_in_list.py](./2-replace_in_list.py): Python function that replaces an element
+  of a list at a specific position.
+  * If `idx` is negative or out of range (greater than the number of elements
+  in `my_list`), the function returns the original list.
+  * Without importing modules or using `try/except`.
 
-> Write a function that replaces an element of a list at a specific position (like in C).
+* **3. Print a list of integers... in reverse!**
+  * [3-print_reversed_list_integer.py](./3-print_reversed_list_integer.py): Python
+  function that prints all integers of a list, one per line, in reverse order.
+  * Without importing modules or casting integers into strings.
 
-- Prototype: def replace_in_list(my_list, idx, element):
-- If idx is negative, the function should not modify anything, and returns the original list
-- If idx is out of range (> of number of element in my_list), the function should not modify anything, and returns the original list
-- You are not allowed to import any module
-- You are not allowed to use try/except
+* **4. Replace in a copy**
+  * [4-new_in_list.py](./4-new_in_list.py): Python function that replaces an element of a
+  list at a specific position without modifying the original list.
+  * If `idx` is negative or out of range (greater than the number of elements in
+  `my_list`), the function returns the original list.
+  * Without importing modules or using `try/except`.
 
-  
-# 3-print_reversed_list_integer.py
+* **5. Can you C me now?**
+  * [5-no_c.py](./5-no_c.py): Python function that removes all characters `c`
+  and `C` from a string and returns the string.
+  * Without importing modules or using `str.replace()`.
 
-> Write a function that prints all integers of a list, in reverse order.
+* **6. Lists of lists = Matrix**
+  * [6-print_matrix_integer.py](./6-print_matrix_integer.py): Python function that prints
+  a matrix of integers, one row per line.
+  * Without casting integers into strings.
 
-- Prototype: def print_reversed_list_integer(my_list=[]):
-- Format: one integer per line.
-- You are not allowed to import any module
-- You can assume that the list only contains integers
-- You are not allowed to cast integers into strings
-- You have to use str.format() to print integers
+* **7. Tuples addition**
+  * [7-add_tuple.py](./7-add_tuple.py): Python function that adds two tuples.
+  * Returns a tuple with two integers:
+    * The first element is the addition of the first element of each argument.
+    * The second element is the addition of the second element of each argument.
+  * If a tuple is smaller than 2, the value `0` is used for the missing integer.
+  * If a tuple is larger than 2, only the first two integers are used.
+  * Without importing modules.
 
-  
-# 4-new_in_list.py
+* **8. More returns!**
+  * [8-multiple_returns.py](./8-multiple_returns.py): Python function that returns a
+  tuple with the length of a string and its first character.
+  * If the string is empty, the first character should equal `None`.
+  * Without importing modules.
 
-> Write a function that replaces an element in a list at a specific position without modifying the original list (like in C).
+* **9. Find the max**
+  * [9-max_integer.py](./9-max_integer.py): Python function that finds the biggest integer
+  of a list.
+  * If the list is empty, the function returns `None`.
+  * Without importing modules or using the builtin `max()`.
 
-- Prototype: def new_in_list(my_list, idx, element):
-- If idx is negative, the function should return a copy of the original list
-- If idx is out of range (> of number of element in my_list), the function should return a copy of the original list
-- You are not allowed to import any module
-- You are not allowed to use try/except
+* **10. Only by 2**
+  * [10-divisible_by_2.py](./10-divisible_by_2.py): Python function that finds all multiples
+  of 2 in a list.  * Returns a new list of the same size. Each element of the new
+  list contains either `True` or `False` corresponding to whether the integer at
+  the same position in the original list is a multiple of 2.
+  * Without importing modules.
 
-  
-# 5-no_c.py
+* **11. Delete at**
+  * [11-delete_at.py](./11-delete_at.py): Python function that deletes an item at
+  a specific position in a list.
+  * If `idx` is negative or out of range (greater than the number of elements in
+  `my_list`), the function returns the original list.
+  * Without imporitng modules or using `pop()`.
 
-> Write a function that removes all characters c and C from a string.
+* **12. Switch**
+  * [12-switch.py](./12-switch.py): Python program that switches the values of
+  variable `a` and `b`.
+  * Completion of [this source code](https://github.com/holbertonschool/0x03.py/blob/master/12-switch_py).
 
-- Prototype: def no_c(my_string):
-- The function should return the new string
-- You are not allowed to import any module
-- You are not allowed to use str.replace()
+* **13. Linked list palindrome**
+  * [13-is_palindrome.c](./13-is_palindrome.c): C function that checks if a
+  singly-linked list is a palindrome.
+  * If the function is not a palindrome - returns `0`.
+  * If the function is a palindrome - returns `1`.
+  * An empty list is considered a palindrome.
+  * Helper files:
+    * [linked_lists.c](./linked_lists.c): C functions handling linked lists for
+    testing [13-is_palindrome.c](./13-is_palindrome.c) (provided by Holberton School).
+    * [lists.h](./lists.h): Header file containing definitions and prototypes for all types
+    and functions used in [linked_lists.c](./linked_lists.c) and
+    [13-insert_number.c](./13-insert_number.c).
 
-  
-# 6-print_matrix_integer.py
-
-> Write a function that prints a matrix of integers.
-
-- Prototype: def print_matrix_integer(matrix=[[]]):
-- Format: see example
-- You are not allowed to import any module
-- You can assume that the list only contains integers
-- You are not allowed to cast integers into strings
-- You have to use str.format() to print integers
-
-```
-guillaume@ubuntu:~/0x03$ cat 6-main.py
-#!/usr/bin/python3
-print_matrix_integer = __import__('6-print_matrix_integer').print_matrix_integer
-
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-
-print_matrix_integer(matrix)
-print("--")
-print_matrix_integer()
-
-```
-
-  
-# 7-add_tuple.py
-
-> Write a function that adds 2 tuples.
-
-- Prototype: def add_tuple(tuple_a=(), tuple_b=()):
-- Returns a tuple with 2 integers:
-- The first element should be the addition of the first element of each argument
-- The second element should be the addition of the second element of each argument
-- You are not allowed to import any module
-- You can assume that the two tuples will only contain integers
-- If a tuple is smaller than 2, use the value 0 for each missing integer
-- If a tuple is bigger than 2, use only the first 2 integers
-
-  
-# 8-multiple_returns.py
-
-> Write a function that returns a tuple with the length of a string and its first character.
-
-- Prototype: def multiple_returns(sentence):
-- If the sentence is empty, the first character should be equal to None
-- You are not allowed to import any module
-
-  
-# 9-max_integer.py
-
-> Write a function that finds the biggest integer of a list.
-
-- Prototype: def max_integer(my_list=[]):
-- If the list is empty, return None
-- You can assume that the list only contains integers
-- You are not allowed to import any module
-- You are not allowed to use the builtin max()
-
-  
-# 10-divisible_by_2.py
-
-> Write a function that finds all multiples of 2 in a list.
-
-- Prototype: def divisible_by_2(my_list=[]):
-- Return a new list with True or False, depending on whether the integer at the same position in the original list is a multiple of 2
-- The new list should have the same size as the original list
-- You are not allowed to import any module
-
-  
-# 11-delete_at.py
-
-> Write a function that deletes the item at a specific position in a list.
-
-- Prototype: def delete_at(my_list=[], idx=0):
-- If idx is negative or out of range, nothing change (returns the same list)
-- You are not allowed to use pop()
-- You are not allowed to import any module
-
-  
-# 12-switch.py
-
-> Complete the source code in order to switch value of a and b
-
-- You can find the source code [here](https://alx-intranet.hbtn.io/rltoken/Iwhtw8ZaGLN7TIzodKGnYA)
-- Your code should be inserted where the comment is (line 4)
-- Your program should be exactly 5 lines long
-
-  
-# 13-is_palindrome.c, lists.h
-
-- You are not allowed to google anything
-- Whiteboard first
-> Write a function in C that checks if a singly linked list is a palindrome.
-
-- Prototype: int is_palindrome(listint_t **head);
-- Return: 0 if it is not a palindrome, 1 if it is a palindrome
-- An empty list is considered a palindrome
-
-  
-``` ADVANCED ```
-
-
-# 100-print_python_list_info.c
-
-- CPython is the reference implementation of the Python programming language. Written in C, CPython is the default and most widely used implementation of the language.
-- Since we now know a bit of C, we can look at what is happening under the hood of Python. Let’s have fun with Python and C, and let’s look at what makes Python so easy to use.
-
-- All your files will be interpreted/compiled on Ubuntu 14.04 LTS
-
-
-> Create a C function that prints some basic info about Python lists.
-
-- Prototype: void print_python_list_info(PyObject *p);
-- Python version: 3.4
-- Your shared library will be compiled with this command line: gcc -Wall -Werror -Wextra -pedantic -std=c99 -shared -Wl,-soname,PyList -o libPyList.
+* **14. CPython #0: Python lists**
+  * [100-print_python_list_info.c](./100-print_python_list_info.c): C function that
+  prints basic information about Python lists.
