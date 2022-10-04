@@ -1,10 +1,31 @@
-# 0x09. Python - Everything is object
+# 0x09-python-everything_is_object
 
-# Tasks
-## 0-answer.txt
-##
-## 2-answer.txt
-## 
+## Background context
 
-## 19-copy_list.py
-pycodestyle 19-copy_list.py; chmod +x 19-copy_list.py; ./19-copy_list.py
+Everything is an object. Python works differently with different types of objects. Example:
+Modifying a variable:
+
+```
+>>> a = 1
+>>> b = a
+>>> a = 2
+>>> b
+1
+>>>
+```
+Here b remains as the initial value of a , even thought a has changed.
+
+```
+>>> l = [1, 2, 3]
+>>> m = l
+>>> l[0] = 'x'
+>>> m
+['x', 2, 3]
+>>>
+```
+l is a list, it is assigned to m (making it a list). A change in either, is reflected on both.
+This concept is known as aliasing, l and m refer to the same object (the list).
+
+
+This projects shows different ways python deals with objects.
+

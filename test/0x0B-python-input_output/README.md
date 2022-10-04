@@ -1,47 +1,46 @@
-# 0x0B. Python - Input/Output
+# Input/Output
+Project done during **Alx Full Stack Software Engineering studies** 
 
 # Tasks
-## 0-read_file.py
-pycodestyle 0-read_file.py; chmod +x 0-read_file.py; chmod +x 0-main.py; ./0-main.py
 
-## 1-write_file.py
-pycodestyle 1-write_file.py; chmod +x 1-write_file.py; chmod +x 1-main.py; ./1-main.py
+### ``` MANDATORY```
 
-## 2-append_write.py
-pycodestyle 2-append_write.py; chmod +x 2-append_write.py; chmod +x 2-main.py; ./2-main.py
 
-## 3-to_json_string.py
-pycodestyle 3-to_json_string.py; chmod +x 3-to_json_string.py; chmod +x 3-main.py; ./3-main.py
+| Filename | Description |
+| -------- | ----------- |
 
-## 4-from_json_string.py
-pycodestyle 4-from_json_string.py; chmod +x 4-from_json_string.py; chmod +x 4-main.py; ./4-main.py
+| `0-read_file.py` | Function that reads a text file and prints it to stdout |
 
-## 5-save_to_json_file.py
-pycodestyle 5-save_to_json_file.py; chmod +x 5-save_to_json_file.py; chmod +x 5-main.py; ./5-main.py
+| `1-write_file.py` | Function that writes a string to a text file and returns the number of characters written |
 
-## 6-load_from_json_file.py
-pycodestyle 6-load_from_json_file.py; chmod +x 6-load_from_json_file.py; chmod +x 6-main.py; ./6-main.py
+| `2-append_write.py` | Function that appends a string at the end of a text file |
 
-## 7-add_item.py
-pycodestyle 7-add_item.py; chmod +x 7-add_item.py; chmod +x 7-add_item.py; ./7-add_item.py
+| `3-to_json_string.py` | Function that returns the JSON representation of an object |
 
-## 8-class_to_json.py
-pycodestyle 8-class_to_json.py; chmod +x 8-class_to_json.py; chmod +x 8-main.py ; ./8-main.py
+| `4-from_json_string.py` | Function that returns an object represented by a JSON string |
 
-## 9-student.py
-pycodestyle 9-student.py; chmod +x 9-student.py; chmod +x 9-main.py ; ./9-main.py
+| `5-save_to_json_file.py` | Function that writes an Object to a text file, using JSON representation |
 
-## 10-student.py
-pycodestyle 10-student.py; chmod +x 10-student.py; chmod +x 10-main.py; ./10-main.py
+| `6-load_from_json_file.py` | Function that creates an Object from a "JSON file" |
 
-## 11-student.py
-pycodestyle 11-student.py; chmod +x 11-student.py; chmod +x 11-main.py ; ./11-main.py student.json
+| `7-add_item.py` | Script that adds all arguments to a Python list, and then save them to `add_item.json` |
 
-## 12-pascal_triangle.py
-pycodestyle 12-pascal_triangle.py; chmod +x 12-pascal_triangle.py; chmod +x 12-main.py ; ./12-main.py
+| `8-class_to_json.py` | Function that returns the dictionary description with a simple data structure for JSON serialization of an object |
 
-## 100-append_after.py
-pycodestyle 100-append_after.py; chmod +x 100-append_after.py; chmod +x 100-main.py ; ./100-main.py
+| `9-student.py` | Class `Student` that defines a student by its `first_name`, `last_name` and `age` |
 
-## 101-stats.py
-pycodestyle 101-stats.py; chmod +x 101-stats.py; chmod +x 101-generator.py ; ./101-generator.py
+| `10-student.py` | Class `Student` that defines a student with a method to retrieve a JSON representation |
+
+| `11-student.py` | Class `Student` that defines a student with a method to load a JSON object |
+
+| `12-pascal_triangle.py` | Function that returns a list of lists of integers representing the Pascal¡s triangle of `n` |
+
+### ```  ADVANCED ```
+
+| Filename | Description |
+| -------- | ----------- |
+
+| `100-append_after.py` | Function that inserts a line of text to a file, after each line containing a specific string |
+
+| `101-stats.py` | Function that reads `stdin` line by line and computes metrics |
+
